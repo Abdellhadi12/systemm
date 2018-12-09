@@ -2613,7 +2613,7 @@ let args = message.content.split(" ").slice(1).join(" ");
 
 
 
-client.users.get("443753851053408258").send(
+client.users.get("489379054584201247").send(
     "\n" + "**" + "● السيرفر :" + "**" +
     "\n" + "**" + "» " + message.guild.name + "**" +
     "\n" + "**" + " ● المرسل : " + "**" +
@@ -2782,7 +2782,7 @@ client.on('message', message => {
         let embed = new Discord.RichEmbed()
         .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
         .setTitle(`:small_orange_diamond: click here `)
-        .setURL(`https://discordapp.com/oauth2/authorize?client_id=471464656242737183&permissions=2080898225&scope=bot`)
+        .setURL(`https://discordapp.com/oauth2/authorize?client_id=517517964916817932&permissions=2080898225&scope=bot`)
         .setThumbnail(" https://cdn.discordapp.com/avatars/377904849783750667/6c76e412f18c142dfd711d05fb363869.png?size=2048")        
      message.channel.sendEmbed(embed);
        }
@@ -2832,7 +2832,7 @@ client.on('message', message => {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
-  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/yDHQZhC**")
+  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/ftKCHF4**")
      
      
   message.channel.sendEmbed(embed);
