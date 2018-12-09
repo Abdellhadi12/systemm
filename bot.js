@@ -3221,7 +3221,7 @@ let antijoin = JSON.parse(fs.readFileSync('./antijoin.json' , 'utf8'));
  
  
 client.on('message', message => {
-    if(message.content.startsWith(prefix + "antijoin on")) {
+    if(message.content.startsWith(prefix + "abda")) {
         if(!message.channel.guild) return message.reply('**This Command Only For Servers**');
         if(!message.member.hasPermission('MANAGE_GUILD')) return message.channel.send('**Sorry But You Dont Have Permission** `MANAGE_GUILD`' );
 antijoin[message.guild.id] = {
@@ -3241,7 +3241,7 @@ message.channel.send(`**✅ The AntiJoin Is __𝐎𝐍__ !**`)
  
  
 client.on('message', message => {
-    if(message.content.startsWith(prefix + "fake")) {
+    if(message.content.startsWith(prefix + "stoop")) {
         if(!message.channel.guild) return message.reply('**This Command Only For Servers**');
         if(!message.member.hasPermission('MANAGE_GUILD')) return message.channel.send('**Sorry But You Dont Have Permission** `MANAGE_GUILD`' );
 antijoin[message.guild.id] = {
