@@ -3157,7 +3157,29 @@ client.on('message', message => {
 
 
 
+const bannedwords = [
+    "كل زق",
+    "زبي",
+    "نكمك",
+    "حتشون",
+    "بزلو",
+    "ايا قود",
+    "تحيا اسرائيل ",
+    "الفشلوق",
+    "ربك",
+    "نكربك",
+    "كالمي رب روحك",
+    "قود" 
+	  
+	   
+  ];
 
+client.on('message',  message => {
+  if(bannedwords.some(word => message.content.includes(word))) {
+    message.delete()
+    message.reply(" احترم نفسك , يمنع الشتم في خادمنا او سوف تتعرض الي  ميوت ").then(msg => {msg.delete(5000)});;
+  };
+});
 
 
 
